@@ -60,7 +60,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Emacs because I've used it in the past.
 
 --
 
@@ -68,6 +68,6 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> PyCharm because I like the interface and one of my friends who does Python developing using it. One interesting feature is that you can work on multiple projects in the same window. One useful keyboard shortcut is with the code completion feature where I can use ^Space to complete different statements. To customize you can use can update in Preferences. I use Dracula for the look and feel, and Monokai for my color scheme.
 
  
