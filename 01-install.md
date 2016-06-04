@@ -46,13 +46,13 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
-Python 2 because the learn python section of the pre-work mentioned Python 2.7.
+>> Python 2 because the learn python section of the pre-work mentioned Python 2.7.
 
 ###Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
-Open the Terminal and type "python --version"
+>> Open the Terminal and type "python --version"
 
  
 
