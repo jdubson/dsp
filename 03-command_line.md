@@ -13,7 +13,16 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 1. mkdir = makes directory
+> > 2. cp = copy a file or directory
+> > 3. mv = move a file or directory
+> > 4. rmdir = remove directory
+> > 5. less = page through a file ("q" to quit)
+> > 6. grep = find things inside files
+> > 7. cd = change directory
+> > 8. ls = list directory
+> > 9. xargs = execute arguments
+> > 10. man = read a manual page
 
 ---
 
@@ -28,7 +37,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ls = list directory
+> > ls -a = list all files and folders
+> > ls -l = list directory in long list format
+> > ls -lh = list directory with unix suffixes
+> > ls -lah = list all files and folder with unix suffixes
+> > ls -t = list directory sorted by time modified
+> > ls -Glp = list directory colored, long list format, and with a / after if file is a directory
 
 ---
 
@@ -36,7 +51,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 1. ls -d
+> > 2. ls -R
+> > 3. ls -g
+> > 4. ls -m
+> > 5. ls -G
 
 ---
 
@@ -44,7 +63,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 'xargs' is used to "construct argument list(s) and execute utility" according to the man page. An example of how to use it: find ./temp -print | xargs grep "file". This finds all the files in my temp folder and passes grep to search for "file".
 
  
 
