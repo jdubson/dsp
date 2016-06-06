@@ -37,13 +37,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > ls = list directory
-> > ls -a = list all files and folders
-> > ls -l = list directory in long list format
-> > ls -lh = list directory with unix suffixes
-> > ls -lah = list all files and folder with unix suffixes
-> > ls -t = list directory sorted by time modified
-> > ls -Glp = list directory colored, long list format, and with a / after if file is a directory
+> > 1. ls = list directory
+> > 2. ls -a = list all files and folders
+> > 3. ls -l = list directory in long list format
+> > 4. ls -lh = list directory with unix suffixes
+> > 5. ls -lah = list all files and folder with unix suffixes
+> > 6. ls -t = list directory sorted by time modified
+> > 7. ls -Glp = list directory colored, long list format, and with a / after if file is a directory
 
 ---
 
