@@ -67,7 +67,19 @@ squares_filter = filter( lambda x: x <= 81, squares )
 print squares_filter
 ```
 
+>> For specific use cases map() is good for applying a function to every member of an iterable, while filter() is good for returning a list of a sequence that matched the function criteria. List comprehensions are able to accomplish both map() and filter() functionalities.
 
+>> Examples of set comprehensions and dictionary comprehensions:
+
+```python
+# Set comprehension
+squares_set = set([ x**2 for x in range(10) ])
+print squares_set
+
+# Dictionary comprehension
+squares_dict = { x: x**2 for x in range(10) }
+print squares_dict
+```
 
 
 ---
