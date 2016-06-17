@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python lists and tuples are similar in that both are sequences of values. The differences are that lists use [] and tuples use (). The major difference is that tuples are immutable, while lists can be updated. Tuples will work as keys in dictionaries because they are immutable.
 
 ---
 
@@ -20,7 +20,9 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists and sets are similar in that both are a collection of elements. The difference is that sets are unordered and do not contain duplicates. An example of a list is "list_a = ["Bob", "Joe", "Jack", "Joe"]" and an example of a set is "set_b = set(["Bob", "Joe", "Jack"])".
+
+>> Finding an element in lists can be done by using their indexes because they are ordered. Set are unordered, so you can't find an element in the same way, but they are good for finding common elements between two sets.
 
 ---
 
@@ -28,7 +30,19 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> In Python, lambda is a way to build anonymous functions. One use case is for functions that will only be used once to make the code clearer and more concise.
+
+>> Here's an example of using lambda in the key argument to sorted:
+
+```python
+# Creates user info tuple and prints sorted by age
+user_info = [
+    ('Bob', 21, 'Oakland, CA'),
+    ('Joe', 29, 'Alameda, CA'),
+    ('Jack', 33, 'Berkeley, CA'),
+]
+print sorted(user_info, key=lambda info: info[1])
+```
 
 ---
 
@@ -36,7 +50,37 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions are an easy and concise way to create lists. Here are examples for list comprehension, map and filter:
+
+```python
+# List comprehension
+squares_list_comp = [ x**2 for x in range(10) ]
+print squares_list_comp
+
+# Map
+squares_map = map( lambda x: x**2, range(10) )
+print squares_map
+
+# Filter
+squares = [ x**2 for x in range(15) ]
+squares_filter = filter( lambda x: x <= 81, squares )
+print squares_filter
+```
+
+>> For specific use cases map() is good for applying a function to every member of an iterable, while filter() is good for returning a list of a sequence that matched the function criteria. List comprehensions are able to accomplish both map() and filter() functionalities.
+
+>> Examples of set comprehensions and dictionary comprehensions:
+
+```python
+# Set comprehension
+squares_set = set([ x**2 for x in range(10) ])
+print squares_set
+
+# Dictionary comprehension
+squares_dict = { x: x**2 for x in range(10) }
+print squares_dict
+```
+
 
 ---
 
@@ -51,7 +95,7 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> The number of days between the start and stop date for a is 937 days.
 
 b.  
 ```
@@ -59,7 +103,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> The number of days between the start and stop date for b is 513 days.
 
 c.  
 ```
@@ -67,7 +111,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
+>> The number of days between the start and stop date for c is 7850 days.
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
